@@ -1,0 +1,127 @@
+1. 계정명은 한글로 적어서는 안된다.
+
+2. 만약에 한글로 되어있는 경우에는 영문으로 계정을 만든 뒤에
+깔끔하게 세팅을 해도 되고, 아니라면 C 드라이브 밑에 새로운 경로를
+잡아서 설치해주면 된다.
+
+3. 프로그램을 그냥 설치하게되면 굉장히 경로가 깊게 설정되어 있는 경우가 있다.
+이런 경우에는 편안한 개발 환경을 위해서 경로를 정리해주는 것도 중요하다.
+
+4. cmd 에서 code 를 입력하면 Visual Studio Code 가 열린다
+
+5. 왠만하면 영어를 이용하여 개발하고 익숙해지는게 좋다.
+왜냐하면 대부분 IT 프로그래밍 쪽에서 사용하는 용어는
+비슷하기 때문에 한번 익숙해두면 여러 환경 및 언어에 익숙해질 수 있다.
+
+6. Visual Studio Code 의 view 의 extentions 을 이용해
+사용할 언어의 환경을 잡아줄 수 있다. (이클립스의 market 과 비슷)
+
+7. Visual Studio Code 의 view 의 Command Palette 를 이용해
+python Select Interpreter 하면 인터프리터 설정 가능
+
+8. 단축키 확인
+Visual Studio Code 의 File -> Preferences -> Keyboard Shortcuts
+
+9. task runner 설정
+일단 설정이 담긴 config 내용이 필요하다. 
+Visual Studio Code 의 view 의 Command Palette 를 이용해
+Tasks: configure Task 를 입력한 뒤 json 파일을 other 로 만든다.
+그리고 그 파일에 config 내용을 전체 붙여넣기 한다.
+task runner 라는 설정은 파이썬에서 제공하는 기능이 아니라
+VSCode 에서 제공하는 기능으로 생각하면 된다. 
+파이썬을 공부하는데 있어서 모든 내용을 알 필요는 없지만
+이 설정의 기능을 간단하게 설명하자면
+불필요하게 terminal에서 정보가 뜨는 것을 없도록 해주고 
+한글처리에 용이하게 UTF-8을 설정해줄 수 있다.
+task runner 를 설정하고 나면 ctrl + f5 가 아니라
+ctrl + shift + b 로 실행하면 된다.
+
+10. Visual Studio Code 의 view 의 extentions 을 이용해
+korean 을 검색 => install
+Palette 로 가서 configure display language 선택
+locale.json 이 생성 된다. (VSCode 의 전체적인 언어를 담당)
+ko 로 바꾸고 껐다가 켜면 한글로 바뀐다.
+
+11. macOs 에서 VSCode 설정
+Visual Studio Code 의 view 의 Command Palette 를 이용해
+shell Command install 'code' command in PATH 클릭 / 암호 입력
+extentions 에서 Python 설치
+터미널에서 python 이라고 입력해보면 2.x 버전이 이미 설정되어있다
+python3 이라고 하면 되는데 이런 부분들이 귀찮다면
+경로를 설정하면된다.
+
+12. 가상환경을 잡아서 아나콘다라던지 파이썬이라던지 사용하는것이 좋다.
+
+13. 가상환경의 필요성
+하나의 환경(전체)에서 여러 버젼을 설치하게 되면 
+나중에 환경변수가 꼬여서 실행이 안되거나
+호환성때문에 충돌이 일어날 수 있다. 
+가상환경별로 실행할 모듈만 관리할 수 있기 때문에 필요하다
+
+14. 파이썬 가상환경 명령어 기초
+가상환경 생성 (해당 폴더가 없으면 생성된다)
+python -m venv ['폴더 이름']
+
+가상환경 실행 / 해제 
+가상환경을 생성했다면 생성한 폴더에 들어가본다.
+Include, Lib, Scripts(mac : Bin) 이 생성되어 있다. 
+(나중에 가상환경을 지울때는 저 세가지 폴더를 지우면 된다.)
+=> (윈도우 : Script, 맥 : Bin) 폴더 에 가상환경을 켜고 끄는 프로그램이 있다.
+activate.bat(mac : source ./activate) => 활성화
+deactivate.bat(mac : source ./deactivate) => 비활성화
+
+패키지 설치 및 삭제 (리스트 확인 / 검색
+pip search ['패키지명'] => 패키지명을 검색
+pip install ['패키지명'] => 패키지를 설치
+pip list => 어떤 것이 설치 되어 있는지 확인
+pip uninstall ['패키지명'] => 패키지 삭제
+pip install --upgrade ['패키지명'] => 패키지 업그레이드
+pip search simple* => 이런 형태로도 검색 가능
+pip show ['패키지명'] => 패키지의 상세정보 확인
+
+* 가상환경 안에서 code 를 입력하면 해당 가상환경에서 실행된다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
